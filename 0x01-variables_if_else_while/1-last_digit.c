@@ -2,12 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
 /**
- * main - Entry point
- *
+ * main - Main function to generate a random number
  *
  * Return: Always 0 (Sucess)
+ *
  */
 int main(void)
 {
@@ -29,4 +28,4 @@ int main(void)
 		printf("Last digit of %d is %d and is 0\n", n, n % 10);
 	}
 	return (0);
-}	
+}
