@@ -1,6 +1,6 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /* more headers goes there */
 /**
  * main - Main function to generate a random number
@@ -15,17 +15,19 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n % 10 != 0 && n % 10 < 6)
+	printf("Last digit of %d is ", n);
+	num = n % 10;
+	if (num > 5)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+		printf("%d and is greater than 5\n", num);
 	}
-	else if (n % 10 > 5)
+	else if ((num < 6) && (num < 0))
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
+		printf("%d and is less than 6 and not \n", num);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+		printf("%d and is 0\n", num);
 	}
 	return (0);
 }
