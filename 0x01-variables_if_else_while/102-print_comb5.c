@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - returns a combination of number
+ * main - returns a combination of a number
  * Return: return 0 if successful
  */
 
@@ -10,11 +10,9 @@ int main(void)
 {
 	int i, j;
 
-for (i = 0; i < 100; i++)
-{
-	for (j = 0; j < 100; j++)
+	for (i = 0; i < 100; i++)
 	{
-		for (ten = 0 ; ten < 10 ; j++)
+		for (j = 0; j < 100; j++)
 		{
 			if (i < j)
 			{
