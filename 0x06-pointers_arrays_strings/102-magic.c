@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/*
+ * File: 102-magic.c
+ * Auth:Immanuel M Mugambi
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 int n;
@@ -16,7 +22,7 @@ p = &n;
    * - only one statement
    * - you are not allowed to code anything else than this line of code
    */
-*((p + 5) = 98);
+*(p + 5) = 98;
   /* ...so that this prints 98\n */
 printf("a[2] = %d\n", a[2]);
 return (0);
